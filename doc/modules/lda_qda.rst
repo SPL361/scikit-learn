@@ -50,7 +50,7 @@ parameter. This parameter has no influence on :func:`lda.LDA.fit` or :func:`lda.
     :ref:`example_decomposition_plot_pca_vs_lda.py`: Comparison of LDA and PCA for dimensionality reduction of the Iris dataset
 
 Mathematical formulation of the LDA and QDA classifiers
-======================
+=======================================================
 
 Both LDA and QDA can be derived from simple probabilistic models 
 which model the class conditional distribution of the data :math:`P(X|y=k)`
@@ -89,7 +89,7 @@ leading to quadratic decision surfaces. See [#1]_ for more details.
 	  and the resulting classifier is equivalent to the Gaussian Naive Bayes classifier :class:`GaussianNB`.
 
 Mathematical formulation of LDA dimensionality reduction
-===========================================================
+========================================================
 
 To understand the use of LDA in dimensionality reduction, it is useful to start
 with a geometric reformulation of the LDA classification rule explained above.
@@ -109,7 +109,7 @@ maximize the variance of the :math:`\mu^*_k` after projection (in effect, we are
 This :math:`L` corresponds to the ``n_components`` parameter in the :func:`lda.LDA.transform` method. See [#1]_ for more details.
 
 Shrinkage
-=========
+==========
 
 Shrinkage is a tool to improve estimation of covariance matrices in situations
 where the number of training samples is small compared to the number of
@@ -136,7 +136,7 @@ matrix.
 
 
 Estimation algorithms
-=====================
+======================
 
 The default solver is 'svd'. It can perform both classification and transform,
 and it does not rely on the calculation of the covariance matrix. This can be
